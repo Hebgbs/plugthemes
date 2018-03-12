@@ -1,65 +1,60 @@
-/* Indigo theme
-   03/09/18 */
-
-/* Import base */
-@Import url(https://rawgit.com/Hebgbs/plugthemes/master/mixBase.css);
-
 /* Variable configuration */
-  :root{
-    /* Numeric values are individual for ease of editing.
-       Tweak the top values to adjust the variables below. */
-    --chill1_R: 18;  /* First colour */
-    --chill1_G: 16;
-    --chill1_B: 58;
-    --chill2_R: 51;  /* Second colour */
-    --chill2_G: 45;
-    --chill2_B: 163;
-    --chill3_R: 0;   /* Third colour */
-    --chill3_G: 33;
-    --chill3_B: 54;
-    --chill4_R: 0;   /* Fourth colour */
-    --chill4_G: 65;
-    --chill4_B: 107;
-    --chill5_R: 37;  /* Fifth colour */
-    --chill5_G: 0;
-    --chill5_B: 64;
-    --chill6_R: 75;  /* Sixth colour */
-    --chill6_G: 0;
-    --chill6_B: 130; 
-    --chill7_R: 38;  /* Seventh colour */
-    --chill7_G: 37;
-    --chill7_B: 58;
-    --chill8_R: 116; /* Eighth colour */
-    --chill8_G: 113;
-    --chill8_B: 176;
-    --chill9_R: 58;
-    --chill9_G: 59;
-    --chill9_B: 69;
-    /* Don't touch these unless you knwo what you are doing.
-       These use the colours defined above, with separate alpha. */
-    --chillHead: rgba(var(--chill1_R), var(--chill1_G), var(--chill1_B), .8);
-    --chillBody: rgba(var(--chill1_R), var(--chill1_G), var(--chill1_B), .7);
-    --chillCtrl: rgba(var(--chill7_R), var(--chill7_G), var(--chill7_B), .7);
-    --chillSide: rgb(var(--chill7_R), var(--chill7_G), var(--chill7_B));
-    --chillHvr: rgb(var(--chill1_R), var(--chill1_G), var(--chill1_B));
-    --isChill: rgb(var(--chill3_R), var(--chill3_G), var(--chill3_B));
-    --isChill_I: rgb(var(--chill4_R), var(--chill4_G), var(--chill4_B));
-    --isCool: rgb(var(--chill1_R), var(--chill1_G), var(--chill1_B));
-    --isCool_I: rgb(var(--chill2_R), var(--chill2_G), var(--chill2_B));
-    --notCool: rgb(var(--chill5_R), var(--chill5_G), var(--chill5_B));
-    --notCool_I: rgb(var(--chill6_R), var(--chill6_G), var(--chill6_B));
-    --posAct: rgba(var(--chill3_R), var(--chill3_G), var(--chill3_B), .7);
-    --negAct: rgba(var(--chill5_R), var(--chill5_G), var(--chill5_B), .7);
-    --chillA: rgb(var(--chill8_R), var(--chill8_G), var(--chill8_B));
-    --chillN: rgb(var(--chill9_R), var(--chill9_G), var(--chill9_B));
-    /* Social media and services */
-    --f_I: #3B5998;
-    --t_I: #1DA1F2;
-    --d_I: #7289DA;
-    --y_I: #ff0000;
-    --r_I: #FF5700;
-    --g_I: #6e5494;
-    /* Branding image size */
-    --MixB_Img: /* SET MANUALLY! DO NOT SET THIS UNTIL ALL KNOWN BROWSERS RESOLVE THE CONSTANT RELOADING BUG USING IMAGES AS VARIABLES CAUSE OUT OF RESPECT FOR USER'S BANDWIDTH */;
-    --MixB_X: 529px;
-    --MixB_Y: 434px;}
+:root{
+  /* Numeric values are individual for ease of editing.
+     Tweak the top values to adjust the variables below. */
+  --chill1_R: 18;  /* First colour */
+  --chill1_G: 16;
+  --chill1_B: 58;
+  --chill2_R: 51;  /* Second colour */
+  --chill2_G: 45;
+  --chill2_B: 163;
+  --chill3_R: 0;   /* Third colour */
+  --chill3_G: 33;
+  --chill3_B: 54;
+  --chill4_R: 0;   /* Fourth colour */
+  --chill4_G: 65;
+  --chill4_B: 107;
+  --chill5_R: 37;  /* Fifth colour */
+  --chill5_G: 0;
+  --chill5_B: 64;
+  --chill6_R: 75;  /* Sixth colour */
+  --chill6_G: 0;
+  --chill6_B: 130; 
+  --chill7_R: 38;  /* Seventh colour */
+  --chill7_G: 37;
+  --chill7_B: 58;
+  --chill8_R: 116; /* Eighth colour */
+  --chill8_G: 113;
+  --chill8_B: 176;
+  --chill9_R: 58;
+  --chill9_G: 59;
+  --chill9_B: 69;
+  /* Don't touch these unless you knOW what you are doing.
+     These use the colours defined above, with separate alpha. */
+  --chillHead: rgba(var(--chill1_R), var(--chill1_G), var(--chill1_B), .8);
+  --chillBody: rgba(var(--chill1_R), var(--chill1_G), var(--chill1_B), .7);
+  --chillCtrl: rgba(var(--chill7_R), var(--chill7_G), var(--chill7_B), .7);
+  --chillSide:  rgb(var(--chill7_R), var(--chill7_G), var(--chill7_B));
+  --chillHvr:   rgb(var(--chill1_R), var(--chill1_G), var(--chill1_B));
+  --isChill:    rgb(var(--chill3_R), var(--chill3_G), var(--chill3_B));
+  --isChill_I:  rgb(var(--chill4_R), var(--chill4_G), var(--chill4_B));
+  --isCool:     rgb(var(--chill1_R), var(--chill1_G), var(--chill1_B)); /* Ignore the fact this is exactly the same as chillHvr for the time being. */
+  --isCool_I:   rgb(var(--chill2_R), var(--chill2_G), var(--chill2_B));
+  --notCool:    rgb(var(--chill5_R), var(--chill5_G), var(--chill5_B));
+  --notCool_I:  rgb(var(--chill6_R), var(--chill6_G), var(--chill6_B));
+  --posAct:    rgba(var(--chill3_R), var(--chill3_G), var(--chill3_B), .7);
+  --negAct:    rgba(var(--chill5_R), var(--chill5_G), var(--chill5_B), .7);
+  --chillA:     rgb(var(--chill8_R), var(--chill8_G), var(--chill8_B));
+  --chillN:     rgb(var(--chill9_R), var(--chill9_G), var(--chill9_B));
+  /* Social media and services */
+  --f_I: #2b5c94;
+  --t_I: #009df6;
+  --d_I: #7289da;
+  --y_I: #ff0000;
+  --r_I: #FF4500;
+  --g_I: #6e5494;
+  --s_I: #ff3a00;
+  /* Branding image size */
+  --MixB_Img: /* SET MANUALLY! DO NOT SET THIS UNTIL ALL KNOWN BROWSERS RESOLVE THE CONSTANT RELOADING BUG USING IMAGES AS VARIABLES CAUSE OUT OF RESPECT FOR USER'S BANDWIDTH */;
+  --MixB_X: 529px;
+  --MixB_Y: 434px;}

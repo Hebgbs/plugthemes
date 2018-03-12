@@ -1,150 +1,154 @@
-/* Base 0.6
-   03/09/18 */
+/* Base 0.8_PREVIEW
+ 03/12/18 */
 
 /* Loading / warns */
-  #main-loading,
-  .loading{
-    opacity: 1 !important;}
+#main-loading,
+.loading{
+  opacity: 1 !important;}
 
-  .ytp-large-play-button:hover{
-    background-color: blue !Important;}
+#main-loading{
+  background-color: transparent !Important;
+  background-image: linear-gradient(to top, var(--isChill) 51px, transparent 51px, transparent 100%) !important;}
+#main-loading .spinner{
+  background-color: var(--isCool_I) !Important;}
 
-  #main-loading{
-    background-color: transparent !Important;
-    background-image: linear-gradient(to top, var(--isChill) 51px, transparent 51px, transparent 100%) !important;}
-  #main-loading .spinner{
-    background-color: var(--isCool_I) !Important;}
+#browser .loading,
+#private-messages .loading{
+  background-color: var(--isChill) !Important;}
 
-  #browser .loading,
-  #private-messages .loading{
-    background-color: var(--isChill) !Important;}
+#warning{
+  background-color: var(--negAct) !important;}
+#warning LEGEND{
+  border: none !Important;}
+#warning A:first-child{
+  background-color: var(--chillSide) !important;}
+#warning A:nth-child(2){
+  background-color: var(--d_I) !important;}
+#warning A:nth-child(3){
+  background-color: var(--t_I) !important;}
+#warning A:last-child{
+  background-color: var(--f_I) !important;}
 
-  #warning{
-    background-color: var(--negAct) !important;}
-  #warning LEGEND{
-    border: none !Important;}
-  #warning A:first-child{
-    background-color: var(--chillSide) !important;}
-  #warning A:nth-child(2){
-    background-color: var(--d_I) !important;}
-  #warning A:nth-child(3){
-    background-color: var(--t_I) !important;}
-  #warning A:last-child{
-    background-color: var(--f_I) !important;}
+#main-loading,
+#browser .loading,
+#private-messages .loading{
+  color: #fff !Important;}
 
-  #main-loading,
-  #browser .loading,
-  #private-messages .loading{
-    color: #fff !Important;}
+#private-messages .private-message-info{
+  color: var(--chillA) !Important;
+  background-color: var(--chillBody) !Important;
+  top: 58px !Important;
+  padding-top: 22px !Important;
+  height: 100% !important;}
 
-  .ytp-button:hover{
-    background-color: blue !Important;}
+.ytp-button:hover{
+  background-color: blue !Important;}
 /* Lobby */
 
 
 
 /* Main UI */
-  #header-global,
-  .infoContainerInner{
-    background-color: var(--chillHead) !Important;}
+#header-global,
+.infoContainerInner{
+  background-color: var(--chillHead) !Important;}
 
-  #main_player,
-  .player_header SPAN:not(.skip-el),
-  .right_section,
-  .play-song-link-container DIV{
-    background-color: var(--chillBody) !Important;}
+#main_player,
+.player_header SPAN:not(.skip-el),
+.right_section,
+.play-song-link-container DIV{
+  background-color: var(--chillBody) !Important;}
 
-  .player_header SPAN:not(.skip-el):hover,
-  .player_header SPAN:not(.skip-el).active,
-  .play-song-link-container DIV:hover,
-  .chat-options DIV SPAN:hover{
-    background-color: var(--chillHvr) !important;}
+.player_header SPAN:not(.skip-el):hover,
+.player_header SPAN:not(.skip-el).active,
+.play-song-link-container DIV:hover,
+.chat-options DIV SPAN:hover{
+  background-color: var(--chillHvr) !important;}
 
-  .player_header SPAN.skip-el,
-  .play-song-link-container .leave-button{
-    background-color: var(--negAct) !important;}
-  .player_header SPAN.skip-el:hover,
-  .play-song-link-container .leave-button:hover{
-    background-color: var(--notCool) !important;}
+.player_header SPAN.skip-el,
+.play-song-link-container .leave-button{
+  background-color: var(--negAct) !important;}
+.player_header SPAN.skip-el:hover,
+.play-song-link-container .leave-button:hover{
+  background-color: var(--notCool) !important;}
 
-  #player-controller .right,
-  .nc-container{
-    background-color: var(--chillCtrl) !Important;}
-  .nc-container LI.nc-active,
-  .nc-container LI:hover{
-    background-color: var(--chillSide) !important;}
+#player-controller .right,
+.nc-container{
+  background-color: var(--chillCtrl) !Important;}
+.nc-container LI.nc-active,
+.nc-container LI:hover{
+  background-color: var(--chillSide) !important;}
 
-  .display-browser [class*="queue-"],
-  .player_header SPAN.active,
-  #player-controller .right A SPAN:nth-child(2),
-  .chat-options DIV SPAN:hover,
-  .chat-options DIV SPAN.active:hover{
-    color: #fff !important;}
+.display-browser [class*="queue-"],
+.player_header SPAN.active,
+#player-controller .right A SPAN:nth-child(2),
+.chat-options DIV SPAN:hover,
+.chat-options DIV SPAN.active:hover{
+  color: #fff !important;}
 
-  .add-to-playlist-button.grabbed{
-    background-color: var(--isChill) !important;}
-  .add-to-playlist-button:not(.grabbed) .icon-heart:before,
-  .chat-options [class*="ChatNotifications"] I{
-    color: var(--isChill) !important;}
-  .add-to-playlist-button:hover .icon-heart:before,
-  .add-to-playlist-button.grabbed .icon-heart:before,
-  .chat-options [class*="ChatNotifications"]:hover I,
-  .chat-options [class*="ChatNotifications"].active I{
-    color: var(--isChill_I) !important;}
+.add-to-playlist-button.grabbed{
+  background-color: var(--isChill) !important;}
+.add-to-playlist-button:not(.grabbed) .icon-heart:before,
+.chat-options [class*="ChatNotifications"] I{
+  color: var(--isChill) !important;}
+.add-to-playlist-button:hover .icon-heart:before,
+.add-to-playlist-button.grabbed .icon-heart:before,
+.chat-options [class*="ChatNotifications"]:hover I,
+.chat-options [class*="ChatNotifications"].active I{
+  color: var(--isChill_I) !important;}
 
-  .dubup:not(.voted) .icon-upvote:before{
-    color: var(--isCool) !important;}
-  .dubup.voted{
-    background-color: var(--isCool) !Important;}
-  #header-global .icon-chevron,
-  .dubup:not(.voted):hover .icon-upvote:before,
-  .dubup.voted SPAN:first-child{
-    color: var(--isCool_I) !Important;}
+.dubup:not(.voted) .icon-upvote:before{
+  color: var(--isCool) !important;}
+.dubup.voted{
+  background-color: var(--isCool) !Important;}
+#header-global .icon-chevron,
+.dubup:not(.voted):hover .icon-upvote:before,
+.dubup.voted SPAN:first-child{
+  color: var(--isCool_I) !Important;}
 
-  .dubdown:not(.voted) .icon-downvote:before{
-    color: var(--notCool) !important;}
-  .player_header SPAN.skip-el:hover,
-  .dubdown.voted{
-    background-color: var(--notCool) !Important;}
-  .icon-mute,
-  .dubdown:not(.voted):hover .icon-downvote:before,
-  .dubdown.voted SPAN:first-child{
-    color: var(--notCool_I) !Important;}
+.dubdown:not(.voted) .icon-downvote:before{
+  color: var(--notCool) !important;}
+.player_header SPAN.skip-el:hover,
+.dubdown.voted{
+  background-color: var(--notCool) !Important;}
+.icon-mute,
+.dubdown:not(.voted):hover .icon-downvote:before,
+.dubdown.voted SPAN:first-child{
+  color: var(--notCool_I) !Important;}
 
-  .ui-slider-handle[style="left: 0%;"]{
-    background-color: var(--notCool_I) !important;}
-  A.ui-slider-handle{
-    background-color: var(--chillA) !important;}
+.ui-slider-handle[style="left: 0%;"]{
+  background-color: var(--notCool_I) !important;}
+A.ui-slider-handle{
+  background-color: var(--chillA) !important;}
 
-  .display-browser SPAN:first-child{
-    color: var(--chillN) !important;}
-  A:focus,
-  .icon-history,
-  .display-browser:hover SPAN:first-child
-  .header-left-navigation A:hover,
-  .player_sharing .player-controller-container SPAN:not(.icon-mute),
-  .play-song-link-browser .icon-play,
-  .chat-main A:hover,
-  .chat-text-box-icons{
-    color: var(--chillA) !important;}
+.display-browser SPAN:first-child{
+  color: var(--chillN) !important;}
+A:focus,
+.icon-history,
+.display-browser:hover SPAN:first-child,
+.header-left-navigation A:hover,
+.player_sharing .player-controller-container SPAN:not(.icon-mute),
+.play-song-link-browser .icon-play,
+.chat-main A:hover,
+.chat-text-box-icons{
+  color: var(--chillA) !important;}
 
-  .player_sharing .icon-facebook{
-    color: var(--f_I) !important;}
-  .player_sharing .icon-twitter{
-    color: var(--t_I) !important;}
+.player_sharing .icon-facebook{
+  color: var(--f_I) !important;}
+.player_sharing .icon-twitter{
+  color: var(--t_I) !important;}
 
-  .nc-container,
-  .snooze_btn:hover,
-  .player_sharing .videoquality-el.active-hd{
-    opacity: 1 !important;}
-  .snooze_btn,
-  .player_sharing .hideVideo-el.active,
-  .player_sharing .videoquality-el{
-    opacity: .5 !important;}
+.nc-container,
+.snooze_btn:hover,
+.player_sharing .videoquality-el.active-hd{
+  opacity: 1 !important;}
+.snooze_btn,
+.player_sharing .hideVideo-el.active,
+.player_sharing .videoquality-el{
+  opacity: .5 !important;}
 
-  #player-controller,
-  #player-controller .left{
-    background-color: transparent !Important;}
+#player-controller,
+#player-controller .left{
+  background-color: transparent !Important;}
 
 /* @null's ideas */
 /**/ /* === CODE BEGIN === */
@@ -154,178 +158,277 @@
 /**/ /* === CODE END === */
 
 /* Side menus */
-  #main-menu-left NAV{
-    background-color: var(--chillBody) !important;}
+#main-menu-left NAV{
+  background-color: var(--chillBody) !important;}
 
-  #main-menu-left NAV:nth-child(2) > A:nth-child(-n+6):not(:nth-child(2)),
-  .logout-link{
-    color: #fff !important;}
-  #main-menu-left :nth-child(2) > A:nth-child(2){
-    color: var(--chillA) !Important;}
-  NAV A.facebook SPAN{
-    color: var(--f_I) !important;}
-  NAV A.twitter SPAN{
-    color: var(--t_I) !important;}
-  NAV A.discord SPAN{
-    color: var(--d_I) !important;}
-  NAV A.youtube SPAN{
-    color: var(--y_I) !important;}
-  NAV A.reddit SPAN{
-    color: var(--r_I) !important;}
-  NAV A.github SPAN{
-    color: var(--g_I) !important;}
-  .icon-logout{
-    color: var(--notCool_I) !important;}
+#main-menu-left NAV:nth-child(2) > A:nth-child(-n+6):not(:nth-child(2)),
+.logout-link{
+  color: #fff !important;}
+#main-menu-left :nth-child(2) > A:nth-child(2){
+  color: var(--chillA) !Important;}
+NAV A.facebook SPAN{
+  color: var(--f_I) !important;}
+NAV A.twitter SPAN{
+  color: var(--t_I) !important;}
+NAV A.discord SPAN{
+  color: var(--d_I) !important;}
+NAV A.youtube SPAN{
+  color: var(--y_I) !important;}
+NAV A.reddit SPAN{
+  color: var(--r_I) !important;}
+NAV A.github SPAN{
+  color: var(--g_I) !important;}
+.icon-logout{
+  color: var(--notCool_I) !important;}
 
-  #main-message-list .message-header,
-  #main-message-list.main-message-list{
-    background: transparent !Important;}
-  #main-message-list .message-header{
-    overflow: hidden !Important;}
+#main-message-list .message-header,
+#main-message-list.main-message-list{
+  background: transparent !Important;}
+#main-message-list .message-header{
+  overflow: hidden !Important;}
 
-  #new-message-input{
-    background-color: var(--chillCtrl) !important;
-    box-shadow: 0px 0px 0px 160px var(--chillBody) !Important;}
+#new-message-input{
+  background-color: var(--chillCtrl) !important;
+  box-shadow: 0px 0px 0px 160px var(--chillBody) !Important;}
 
-  #main-menu-right .close-menu{
-    background-color: var(--chillBody) !important;}
-  #main-message-list .message-item{
-    background-color: var(--chillCtrl) !important;
-    opacity: 1 !Important;}
+#main-menu-right .close-menu{
+  background-color: var(--chillBody) !important;}
+#main-message-list .message-item{
+  background-color: var(--chillCtrl) !important;
+  opacity: 1 !Important;}
 
-  #main-menu-right .close-menu SPAN{
-    color: var(--notCool_I) !important;}
+#main-menu-right .close-menu SPAN{
+  color: var(--notCool_I) !important;}
 
 /* Library browser */
-  #browser A.text-button{
-    border-radius: .3rem !important;
-    border-color: transparent !Important;}
+#browser A.text-button{
+  border-radius: .3rem !important;
+  border-color: transparent !Important;}
 
-  #browser A.queue-playlist{
-    background-color: var(--posAct) !important;}
-  #browser A.queue-playlist:hover,
-  #browser .sidebar .selected{
-    background-color: var(--isChill) !important;
-    color: #fff !Important;}
+#browser A.queue-playlist{
+  background-color: var(--posAct) !important;}
+#browser A.queue-playlist:hover,
+#browser .sidebar .selected,
+#import-playlist-container .import-playlist,
+#browser .icon-createplaylist{
+  background-color: var(--isChill) !important;
+  color: #fff !Important;}
 
-  #browser .browser-content-header,
-  #browser .sidebar{
-    background-color: var(--chillSide) !important;}
+#browser .browser-content-header,
+#browser .sidebar{
+  background-color: var(--chillSide) !important;}
 
-  #browser A.pause-queue{
-    background-color: var(--chillBody) !Important;}
-  #browser .form INPUT,
-  #browser .form .music-type-select,
-  #browser .form .music-type-dropdown,
-  #browser A.pause-queue:hover{
-    background-color: var(--chillHvr) !important;
-    color: #fff !important;}
+#browser A.pause-queue{
+  background-color: var(--chillBody) !Important;}
+#browser .form INPUT,
+#browser .form .music-type-select,
+#browser .form .music-type-dropdown,
+#browser A.pause-queue:hover{
+  background-color: var(--chillHvr) !important;
+  color: #fff !important;}
 
-  #browser A.edit-playlist-name,
-  #browser A.shuffle-playlist{
-    background-color: var(--chillCtrl) !Important;}
-  #browser A.edit-playlist-name:hover,
-  #browser A.shuffle-playlist:hover{
-    background-color: var(--chillSide) !important;
-    color: #fff !important;}
+#browser A.edit-playlist-name,
+#browser A.shuffle-playlist{
+  background-color: var(--chillCtrl) !Important;}
+#browser A.edit-playlist-name:hover,
+#browser A.shuffle-playlist:hover{
+  background-color: var(--chillSide) !important;
+  color: #fff !important;}
 
-  #browser
+#browser A.clear-queue,
+#browser A.delete-playlist{
+  background-color: var(--negAct) !important;}
+#browser A.clear-queue:hover,
+#browser A.delete-playlist:hover{
+  background-color: var(--notCool) !important;
+  color: #fff !Important;}
 
-  #browser .content-videos{
-    background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse25.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat var(--chillSide) !important;}
-  #browser .content-videos LI{
-    background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse25.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat var(--chillHvr) !important;}
+#browser .sidebar .create-playlist,
+#browser .sidebar .import-playlist,
+#browser .close-browser.icon-downvote{
+  background-color: var(--isChill) !Important;}
+#browser .sidebar .create-playlist SPAN,
+#browser .sidebar .import-playlist SPAN,
+#browser .close-browser.icon-downvote{
+  color: var(--chillA) !Important;}
 
-  #browser A.clear-queue,
-  #browser A.delete-playlist{
-    background-color: var(--negAct) !important;}
-  #browser A.clear-queue:hover,
-  #browser A.delete-playlist:hover{
-    background-color: var(--notCool) !important;
-    color: #fff !Important;}
+.queue-info-contains-notice DIV[class*="queue"]{
+  color: #fff !Important;}
 
-  #browser .sidebar .create-playlist,
-  #browser .sidebar .import-playlist,
-  #browser .close-browser.icon-downvote{
-    background-color: var(--isChill) !Important;}
-  #browser .sidebar .create-playlist SPAN,
-  #browser .sidebar .import-playlist SPAN,
-  #browser .close-browser.icon-downvote{
-    color: var(--chillA) !Important;}
+#browser .sidebar SPAN:before{
+  color: var(--chillA) !important;}
 
-  #browser #import-playlist-container{
-    background-color: var(--chillBody) !important;}
+#browser .actions A{
+  background-color: transparent !important;
+  border: none !Important;}
+#browser .actions A SPAN:before,
+#browser .actions A SPAN{
+  color: #fff !important;}
+#browser .actions .add_to_playlist:hover SPAN:before{
+  color: var(--isChill_I) !important;}
+#browser LI .preview,
+#browser .actions .add_to_queue:hover SPAN:before,
+#browser .actions .set_song_to_top_queue:hover SPAN:before,
+#import-playlist-container .import-playlist:before{
+  color: var(--chillA) !important;}
+#browser .actions .remove_icon:hover SPAN:before{
+  color: var(--notCool) !important;}
+#browser LI .preview .icon-youtube{
+  color: var(--y_I) !important;}
+#browser LI .preview .icon-soundcloud{
+  color: var(--s_I) !important;}
 
-  .queue-join-info{
-    background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse25.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat var(--isChill) !important;}
-  .queue-locked-info{
-    background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse25.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat var(--notCool) !important;}
-  .queue-info-contains-notice DIV[class*="queue"]{
-    color: #fff !Important;}
-  #browser #import-playlist-container .icon-close{
-    background-color: transparent !important;
-    color: var(--notCool_I) !important;}
+#import-playlist-container{
+  background-color: var(--chillBody) !important;}
+#import-playlist-container .icon-close{
+  background-color: transparent !important;
+  color: var(--notCool_I) !important;}  
+#import-playlist-container SELECT{
+  background-color: var(--chillSide) !Important;
+  color: #fff !important;}  
+#import-playlist-container .import-playlist{
+  font-family: Open Sans,sans-serif !important;}
+#import-playlist-container .import-playlist:before{
+  font-family: icomoon !important;}
 
-  #browser #import-playlist-container SELECT{
-    background-color: var(--chillSide) !Important;
-    color: #fff !important;}
+#browser [class*="_info"]{
+  background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse25.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat var(--chillN) !important;}
+#browser .content-videos{
+  background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse25.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat var(--chillSide) !important;}
+#browser .content-videos LI{
+  background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse25.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat var(--chillHvr) !important;}
+.queue-join-info,
+#browser .content-videos LI:hover,
+#browser .content-videos LI.selected{
+  background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse25.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat var(--isChill) !important;}
+.queue-locked-info{
+  background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse25.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat var(--notCool) !important;}
+#browser .place{
+  color: #fff !important;
+  text-align: center !Important;
+  font-weight: bold !Important;
+  font-size: 12pt !Important;
+  width: 32px !Important;
+  top: -8px !important;
+  left: 36px !Important;
+  padding-bottom: 2px !important;
+  border-radius: 2px !important;
+  z-index: 1 !Important;}
+#browser .content-videos LI .place{
+  background-color: var(--chillBody) !important;}
+#browser .content-videos LI:hover .place{
+  background-color: var(--chillHvr) !important;}
+#browser .content-videos FIGURE IMG{
+  top: -3px !Important;}
 
-  #browser #import-playlist-container OPTION{
-    background-color: var(--chillN) !Important;
-    color: #fff !important;}
+#addToPlaylistFloatContainer .create-playlist-header,
+#addToPlaylistFloatContainer UL LI:hover{
+  background-color: var(--isChill) !important;}
+#addToPlaylistFloatContainer .create-playlist-input{
+  background-color: var(--chillN) !Important;
+  border-color: transparent !Important;}
+#addToPlaylistFloatContainer UL{
+  background-color: var(--chillHvr) !Important;}
+#addToPlaylistFloatContainer .create-playlist-header SPAN{
+  color: var(--notCool) !Important;}
+#addToPlaylistFloatContainer .create-playlist-input SPAN{
+  color: var(--chillA) !important;}
+#addToPlaylistFloatContainer UL LI{
+  color: #fff !Important;}
 
+#browser .actions,
+#browser .icon-createplaylist,
+#addToPlaylistFloatContainer .create-playlist-input SPAN{
+  background-color: transparent !important;}
+#browser .content-videos LI.selected{
+  border-color: transparent !Important;}
 /* Third-party enhancements */
-  /* Dub+ */
+/* Dub+ */
   /* > Old method; Make menu use colour with opaque headers */
 /*.dubplus-menu{
-    background-color: var(--chillBody) !important;}
+  background-color: var(--chillBody) !important;}
 
-  .dubplus-menu-section-header{
-    background-color: var(--chillSide) !important;}*/
+.dubplus-menu-section-header{
+  background-color: var(--chillSide) !important;}*/
 
   /* > Current method; Make menu transparent with less opaque colours */
-  .dubplus-menu-header,
-  .dubplus-menu-section{
-    background-color: var(--chillBody) !important;
-    border-color: transparent !Important;}
+.dubplus-menu-header,
+.dubplus-menu-section{
+  background-color: var(--chillBody) !important;
+  border-color: transparent !Important;}
 
-  .dubplus-menu-section-header{
-    background-color: var(--chillCtrl) !important;
-    border-color: transparent !Important;}
+.dubplus-menu-section-header{
+  background-color: var(--chillCtrl) !important;
+  border-color: transparent !Important;}
 
-  .dubplus-switch-bg{
-    border-color: transparent !important;
-    box-shadow: 0px 0px 0px 2px var(--chillSide) !Important;}
-  .dubplus-switch .dubplus-switcher{
-    background-color: var(--notCool) !Important;
-    border: 2px solid var(--notCool_I) !important;}
-  .dubplus-switch-on .dubplus-switcher{
-    background-color: var(--isChill) !Important;
-    border: 2px solid var(--isChill_I) !important;}
+.dubplus-switch-bg{
+  border-color: transparent !important;
+  box-shadow: 0px 0px 0px 2px var(--chillSide) !Important;}
+.dubplus-switch .dubplus-switcher{
+  background-color: var(--notCool) !Important;
+  border: 2px solid var(--notCool_I) !important;}
+.dubplus-switch-on .dubplus-switcher{
+  background-color: var(--isChill) !Important;
+  border: 2px solid var(--isChill_I) !important;}
+  /* Other menu stuff */
+.fa-arrows-alt{
+  color: var(--isChill_I) !Important;}
+.fa-bug{
+  color: var(--notCool_I) !important;}
+.fa-reddit-alien{
+  color: var(--r_I) !important;}
+.fa-facebook{
+  color: var(--f_I) !important;}
+.fa-twitter{
+  color: var(--t_I) !important;}
 
-  .fa-arrows-alt{
-    color: var(--isChill_I) !Important;}
-  .fa-bug{
-    color: var(--notCool_I) !important;}
-  .fa-reddit-alien{
-    color: var(--r_I) !important;}
-  .fa-facebook{
-    color: var(--f_I) !important;}
-  .fa-twitter{
-    color: var(--t_I) !important;}
+.dubplus-menu,
+.dubplus-switch-bg{
+  background: transparent !Important;}
 
-  .dubplus-menu,
-  .dubplus-switch-bg{
-    background: transparent !Important;}
+.dubplus-menu .dubplus-switch.dubplus-switch .dubplus-switcher{
+  right: 13px !Important;}
+.dubplus-menu .dubplus-switch.dubplus-switch-on .dubplus-switcher{
+  right: 10px !Important;}
 
-  .dubplus-menu .dubplus-switch.dubplus-switch .dubplus-switcher{
-    right: 13px !Important;}
-  .dubplus-menu .dubplus-switch.dubplus-switch-on .dubplus-switcher{
-    right: 10px !Important;}
+  /* Voting */
+.dubinfo-show.dubplus-grabs-hover{
+  background-color: var(--posAct) !Important;
+  border-color: var(--isChill_I) !important;}
+.dubinfo-show.dubplus-grabs-hover LI:hover{
+  background-color: var(--isChill_I) !important;}
+.dubinfo-show.dubplus-updubs-hover{
+  background-color: var(--isCool) !Important;
+  border-color: var(--isCool_I) !important;}
+.dubinfo-show.dubplus-updubs-hover LI:hover{
+  background-color: var(--isCool_I) !important;}
+.dubinfo-show.dubplus-downdubs-hover{
+  background-color: var(--negAct) !Important;
+  border-color: var(--notCool_I) !important;}
+.dubinfo-show.dubplus-downdubs-hover LI:hover{
+  background-color: var(--notCool_I) !important;}
+  /* Dialogs */
+.dp-modal .title{
+  background-color: var(--isCool) !important;}
+.dp-modal TEXTAREA{
+  background-color: var(--chillN) !important;}
+#dp-modal-cancel{
+  background-color: var(--notCool) !important;}
+#dp-modal-cancel:hover{
+  background-color: var(--notCool_I) !important;}
+#dp-modal-confirm{
+  background-color: var(--isChill) !important;
+  color: #fff !Important;}
+#dp-modal-confirm:hover{
+  background-color: var(--isChill_I) !important;}
+.dp-modal .content{
+  background-color: var(--chillBody) !important;}
+.dp-modal .container{
+  background-color: transparent !important;}
 
 
 /* Rainbow progress bars and sliders
-   Modified to be not rainbow and animated, using vars from v2 theme */
+ Modified to be not rainbow and animated, using vars from v2 theme */
 /**/ /* === CODE BEGIN === */
 /**/ /* Thanks to Netox005 for finding a better way to do this! */
 /**/
@@ -356,8 +459,7 @@
 /**/   background-color: #fff !Important;}
 /**/   /* Rainbow gradients */
 /**/     /* Bright */
-/**/ #player-controller .progressBg,
-/**/ .playerPreview .progress{
+/**/ #player-controller .progressBg{
 /**/   background-image: linear-gradient(to left,
 /**/                                     var(--notCool_I) 0%,
 /**/                                     var(--isChill_I) 100%) !Important;}
@@ -366,8 +468,7 @@
 /**/                                     var(--isChill_I) 0%,
 /**/                                     var(--notCool_I) 100%) !Important;}
 /**/     /* Dark */
-/**/ #player-controller .infoContainerInner:after,
-/**/ .playerPreview .loaded{
+/**/ #player-controller .infoContainerInner:after{
 /**/   background-image: linear-gradient(to left,
 /**/                                     var(--notCool) 0%,
 /**/                                     var(--isChill) 100%) !Important;}
@@ -375,6 +476,13 @@
 /**/   background-image: linear-gradient(to left,
 /**/                                     var(--isChill) 0%,
 /**/                                     var(--notCool) 100%) !Important;}
+/**/
+/**/ .playerPreview .progress{
+/**/   background-color: var(--isChill) !Important;}
+/**/ .playerPreview .loaded{
+/**/   background-color: var(--chillHvr) !Important;}
+/**/ .playerPreview .progressContainer{
+/**/   background-color: var(--notCool) !important;}
 /**/
 /**/ /* Progress bars */
 /**/ #player-controller .left,
