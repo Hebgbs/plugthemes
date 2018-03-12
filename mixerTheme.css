@@ -1,3 +1,9 @@
+/* Indigo theme
+   PREVIEW 03/12/18 */
+
+/* Import base */
+@Import url(https://rawgit.com/Hebgbs/plugthemes/master/mixBase.css);
+
 /* Variable configuration */
 :root{
   /* Numeric values are individual for ease of editing.
