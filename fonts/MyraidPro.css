@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Myraid Pro";
+  src: url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-Regular.eot');
+  src: url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-Regular.eot') format('embedded-opentype'),
+       url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-Regular.woff') format('woff'),
+       url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-Regular.ttf') format('truetype'),
+       url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-Regular.svg') format('svg');
+}
+@font-face {
+    font-family: "Myraid Pro Bold";
+  src: url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-Bold.eot');
+  src: url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-Bold.eot') format('embedded-opentype'),
+       url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-Bold.woff') format('woff'),
+       url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-Bold.ttf') format('truetype'),
+       url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-Bold.svg') format('svg');
+  font-weight: bold;
+}
+@font-face {
+    font-family: "Myraid Pro Italic";
+  src: url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-It.eot');
+  src: url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-It.eot') format('embedded-opentype'),
+       url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-It.woff') format('woff'),
+       url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-It.ttf') format('truetype'),
+       url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-It.svg') format('svg');
+  font-style: italic;
+}
+@font-face {
+    font-family: "Myraid Pro Bold Italic";
+  src: url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-BoldIt.eot');
+  src: url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-BoldIt.eot') format('embedded-opentype'),
+       url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-BildIt.woff') format('woff'),
+       url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-BoldIt.ttf') format('truetype'),
+       url('https://rawgit.com/hebgbs/plugthemes/master/fonts/MyriadPro-BoldIt.svg') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
