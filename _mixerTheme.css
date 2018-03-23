@@ -1,0 +1,51 @@
+/* Indigo theme
+   PREVIEW 03/12/18 */
+
+/* Import base */
+@Import url(https://rawgit.com/Hebgbs/plugthemes/master/_mixBase.css);
+
+/* Variable configuration */
+  :root{
+  /* Colours for the theme: HSL */
+    /* Hues: 0-360 */
+    --H_1: 243;
+    --H_2: 203;
+    --H_3: 275;
+    /* Sats: 0%-100%*/
+	--S_1: 10%;
+    --S_2: 20%;
+	--S_3: 50%; 
+    --S_4: 100%;
+	  /* Lums: 0%-100% */
+	--L_1: 20%;
+	--L_2: 30%;
+	--L_3: 40%;
+	--L_4: 50%;
+  /* Opacity of colours, separated for ease of adjustment. 
+     Only for HSLA colours, 0.0 - 1.0 */
+    --A_1: .9;
+  	--A_2: .8;
+  	--A_3: .7;
+  /* Defined colours using the variables above.
+     Caution adjusting these, add new vars above as necessary. */
+    --chillBase:   var(--H_1), var(--S_3), var(--L_1);
+    --chillBase_I: var(--H_1), var(--S_3), var(--L_3);
+    --isChill:     var(--H_2), var(--S_4), var(--L_1);
+    --isChill_I:   var(--H_2), var(--S_4), var(--L_2);
+    --notCool:     var(--H_3), var(--S_4), var(--L_1);
+    --notCool_I:   var(--H_3), var(--S_4), var(--L_2);
+    --chillSide:   var(--H_1), var(--S_2), var(--L_1);
+    --chillA:      var(--H_1), var(--S_2), var(--L_4);
+    --chillN:      var(--H_1), var(--S_1), var(--L_1);
+/* Social media and services */
+    --f_I: #2b5c94;
+    --t_I: #009df6;
+    --d_I: #7289da;
+    --y_I: #ff0000;
+    --r_I: #FF4500;
+    --g_I: #6e5494;
+    --s_I: #ff3a00;
+/* Branding image size */
+    --MixB_Img: /* SET MANUALLY! DO NOT SET THIS UNTIL ALL KNOWN BROWSERS RESOLVE THE CONSTANT RELOADING BUG USING IMAGES AS VARIABLES CAUSE OUT OF RESPECT FOR USER'S BANDWIDTH */;
+    --MixB_X: 529px;
+    --MixB_Y: 434px;}
