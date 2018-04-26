@@ -1,585 +1,567 @@
+/*  ___    _         _    _                  _
+   (  _`\ ( )     _ (_ ) (_ )               ( )_    /'\_/`\ _
+   | ( (_)| |__  (_) | |  | |    _    _   _ | ,_)   |     |(_)         __   _ __
+   | |  _ |  _ `\| | | |  | |  /'_`\ ( ) ( )| |     | (_) || |(`\/') /'__`\( '__)
+   | (_( )| | | || | | |  | | ( (_) )| (_) || |_    | | | || | >  < (  ___/| |
+   (____/'(_) (_)(_)(___)(___)`\___/'`\___/'`\__)   (_) (_)(_)(_/\_)`\____)(_)
+    _    _                                  _
+   ( )_ ( ) (ASCII font from patorjk.com)  ( ) (Bubbly typeface)
+   | ,_)| |__     __    ___ ___     __     | |_      _ _   ___    __
+   | |  |  _ `\ /'__`\/' _ ` _ `\ /'__`\   | '_`\  /'_` )/',__) /'__`\
+   | |_ | | | |(  ___/| ( ) ( ) |(  ___/   | |_) )( (_| |\__, \(  ___/
+   `\__)(_) (_)`\____)(_) (_) (_)`\____)   (_,__/'`\__,_)(____/`\____)
+*/
+
 /* Loading / warns */
-  #main-loading,
-  .loading{
-    opacity: 1 !important;}
-  
-  #main-loading{
-    background-color: transparent !Important;
-    background-image: linear-gradient(to top, hsl(var(--isChill)) 51px, transparent 51px, transparent 100%) !important;
-  }
-  #main-loading .spinner{
-    background-color: hsl(var(--chillBase_I)) !Important;
-  }
-  
-  #browser .loading,
-  #private-messages .loading{
-    background-color: hsl(var(--isChill)) !Important;
-  }
-  
-  #warning{
-    background-color: hsla(var(--notCool), var(--A_3)) !important;
-  }
-  #warning LEGEND{
-    border: none !Important;
-  }
-  #warning A:first-child{
-    background-color: hsl(var(--chillSide)) !important;
-  }
-  #warning A:nth-child(2){
-    background-color: var(--d_I) !important;
-  }
-  #warning A:nth-child(3){
-    background-color: var(--t_I) !important;
-  }
-  #warning A:last-child{
-    background-color: var(--f_I) !important;
-  }
-  
-  #main-loading,
-  #browser .loading,
-  #private-messages .loading{
-    color: #fff !Important;
-  }
-  
-  #private-messages .private-message-info{
-    color: hsl(var(--chillA)) !Important;
-    background-color: hsla(var(--chillBase), var(--A_3)) !Important;
-    top: 58px !Important;
-    padding-top: 22px !Important;
-    height: 100% !important;
-  }
-  
-  .ytp-button:hover{
-    background-color: blue !Important;
-  }
+#main-loading,
+.loading{
+  opacity: 1 !important;}
+
+#main-loading{
+  background-color: transparent !Important;
+  background-image: linear-gradient(to top, hsl(var(--isChill)) 51px, transparent 51px, transparent 100%) !important;}
+#main-loading .spinner{
+  background-color: hsl(var(--chillBase_I)) !Important;}
+
+#browser .loading,
+#private-messages .loading{
+  background-color: hsl(var(--isChill)) !Important;}
+
+#warning{
+  background-color: hsla(var(--notCool), var(--A_3)) !important;}
+#warning LEGEND{
+  border: none !Important;}
+#warning A:first-child{
+  background-color: hsl(var(--chillSide)) !important;}
+#warning A:nth-child(2){
+  background-color: var(--d_I) !important;}
+#warning A:nth-child(3){
+  background-color: var(--t_I) !important;}
+#warning A:last-child{
+  background-color: var(--f_I) !important;}
+
+#main-loading,
+#browser .loading,
+#private-messages .loading{
+  color: #fff !Important;}
+
+#private-messages .private-message-info{
+  color: hsl(var(--chillA)) !Important;
+  background-color: hsla(var(--chillBase), var(--A_3)) !Important;
+  top: 58px !Important;
+  padding-top: 22px !Important;
+  height: 100% !important;}
+
+.ytp-button:hover{
+  background-color: blue !Important;}
 /* Lobby */
-
-
+BODY{
+   background-color: hsl(var(--isChill)) !important;}
 
 /* Main UI */
-  #header-global,
-  .infoContainerInner{
-    background-color: hsla(var(--chillBase), var(--A_2)) !Important;}
+#header-global,
+.infoContainerInner{
+  background-color: hsla(var(--chillBase), var(--A_2)) !Important;}
 
-  #main_player,
-  .player_header SPAN:not(.skip-el),
-  .right_section,
-  .play-song-link-container DIV{
-    background-color: hsla(var(--chillBase), var(--A_3)) !Important;}
+#main_player,
+.player_header SPAN:not(.skip-el),
+.right_section,
+.play-song-link-container DIV{
+  background-color: hsla(var(--chillBase), var(--A_3)) !Important;}
 
-  .player_header SPAN:not(.skip-el):hover,
-  .player_header SPAN:not(.skip-el).active,
-  .play-song-link-container DIV:hover,
-  .chat-options DIV SPAN:hover{
-    background-color: hsl(var(--chillBase)) !important;}
+.player_header SPAN:not(.skip-el):hover,
+.player_header SPAN:not(.skip-el).active,
+.play-song-link-container DIV:hover,
+.chat-options DIV SPAN:hover{
+  background-color: hsl(var(--chillBase)) !important;}
 
-  .player_header SPAN.skip-el,
-  .play-song-link-container .leave-button{
-    background-color: hsla(var(--notCool), var(--A_3)) !important;}
-  .player_header SPAN.skip-el:hover,
-  .play-song-link-container .leave-button:hover{
-    background-color: hsl(var(--notCool)) !important;}
-  
-  #player-controller .right,
-  .nc-container{
-    background-color: hsla(var(--chillSide), var(--A_3)) !Important;}
-  .nc-container LI.nc-active,
-  .nc-container LI:hover{
-    background-color: hsl(var(--chillSide)) !important;
-  }
-  
-  .display-browser [class*="queue-"],
-  .player_header SPAN.active,
-  #player-controller .right A SPAN:nth-child(2),
-  .chat-options DIV SPAN:hover,
-  .chat-options DIV SPAN.active:hover{
-    color: #fff !important;}
+.player_header SPAN.skip-el,
+.play-song-link-container .leave-button{
+  background-color: hsla(var(--notCool), var(--A_3)) !important;}
+.player_header SPAN.skip-el:hover,
+.play-song-link-container .leave-button:hover{
+  background-color: hsl(var(--notCool)) !important;}
 
-  .add-to-playlist-button.grabbed{
-    background-color: hsl(var(--isChill)) !important;}
-  .add-to-playlist-button:not(.grabbed) .icon-heart:before,
-  .chat-options [class*="ChatNotifications"] I{
-    color: hsl(var(--isChill)) !important;}
-  .add-to-playlist-button:hover .icon-heart:before,
-  .add-to-playlist-button.grabbed .icon-heart:before,
-  .chat-options [class*="ChatNotifications"]:hover I,
-  .chat-options [class*="ChatNotifications"].active I{
-    color: hsl(var(--isChill_I)) !important;}
+#player-controller .right,
+.nc-container{
+  background-color: hsla(var(--chillSide), var(--A_3)) !Important;}
+.nc-container LI.nc-active,
+.nc-container LI:hover{
+  background-color: hsl(var(--chillSide)) !important;}
 
-  .dubup:not(.voted) .icon-upvote:before{
-    color: hsl(var(--chillBase)) !important;}
-  .dubup.voted{
-    background-color: hsl(var(--chillBase)) !Important;}
-  #header-global .icon-chevron,
-  .dubup:not(.voted):hover .icon-upvote:before,
-  .dubup.voted SPAN:first-child{
-    color: hsl(var(--chillBase_I)) !Important;}
+.display-browser [class*="queue-"],
+.player_header SPAN.active,
+#player-controller .right A SPAN:nth-child(2),
+.chat-options DIV SPAN:hover,
+.chat-options DIV SPAN.active:hover{
+  color: #fff !important;}
 
-  .dubdown:not(.voted) .icon-downvote:before{
-    color: hsl(var(--notCool)) !important;}
-  .player_header SPAN.skip-el:hover,
-  .dubdown.voted{
-    background-color: hsl(var(--notCool)) !Important;}
-  .icon-mute,
-  .dubdown:not(.voted):hover .icon-downvote:before,
-  .dubdown.voted SPAN:first-child{
-    color: hsl(var(--notCool_I)) !Important;}
-  
-  .ui-slider-handle[style="left: 0%;"]{
-    background-color: hsl(var(--notCool_I)) !important;
-  }
-  A.ui-slider-handle,
-  .header-right-navigation .message-counter,
-  #new-messages-counter{
-    background-color: hsl(var(--chillA)) !important;
-    color: #000 !important;
-  }
-  
-  .display-browser SPAN:first-child{
-    color: hsl(var(--chillN)) !important;
-  }
-  A:focus,
-  .icon-history,
-  .display-browser:hover SPAN:first-child,
-  .header-left-navigation A:hover,
-  .player_sharing .player-controller-container SPAN:not(.icon-mute),
-  .play-song-link-browser .icon-play,
-  .chat-main A:hover,
-  .chat-text-box-icons{
-    color: hsl(var(--chillA)) !important;
-  }
-  
-  .player_sharing .icon-facebook{
-    color: var(--f_I) !important;
-  }
-  .player_sharing .icon-twitter{
-    color: var(--t_I) !important;
-  }
-  
-  .nc-container,
-  .snooze_btn:hover,
-  .player_sharing .videoquality-el.active-hd{
-    opacity: 1 !important;
-  }
-  .snooze_btn,
-  .player_sharing .hideVideo-el.active,
-  .player_sharing .videoquality-el{
-    opacity: .5 !important;
-  }
-  
-  #player-controller,
-  #player-controller .left{
-    background-color: transparent !Important;}
-  
+.add-to-playlist-button.grabbed{
+  background-color: hsl(var(--isChill)) !important;}
+.add-to-playlist-button:not(.grabbed) .icon-heart:before,
+.chat-options [class*="ChatNotifications"] I{
+  color: hsl(var(--isChill)) !important;}
+.add-to-playlist-button:hover .icon-heart:before,
+.add-to-playlist-button.grabbed .icon-heart:before,
+.chat-options [class*="ChatNotifications"]:hover I,
+.chat-options [class*="ChatNotifications"].active I{
+  color: hsl(var(--isChill_I)) !important;}
+
+.dubup:not(.voted) .icon-upvote:before{
+  color: hsl(var(--chillBase)) !important;}
+.dubup.voted{
+  background-color: hsl(var(--chillBase)) !Important;}
+#header-global .icon-chevron,
+.dubup:not(.voted):hover .icon-upvote:before,
+.dubup.voted SPAN:first-child{
+  color: hsl(var(--chillBase_I)) !Important;}
+
+.dubdown:not(.voted) .icon-downvote:before{
+  color: hsl(var(--notCool)) !important;}
+.player_header SPAN.skip-el:hover,
+.dubdown.voted{
+  background-color: hsl(var(--notCool)) !Important;}
+.icon-mute,
+.dubdown:not(.voted):hover .icon-downvote:before,
+.dubdown.voted SPAN:first-child{
+  color: hsl(var(--notCool_I)) !Important;}
+
+.ui-slider-handle[style="left: 0%;"]{
+  background-color: hsl(var(--notCool_I)) !important;}
+.ui-slider-handle,
+.header-right-navigation .message-counter,
+#new-messages-counter{
+  background-color: hsl(var(--chillA)) !important;
+  color: #000 !important;}
+
+.ui-slider,
+.ui-slider-range{
+  background-color: transparent !Important;
+  background-size: 100% 100% !Important;}
+.ui-slider{
+  background-image: linear-gradient(to left, hsl(var(--isChill)), hsl(var(--notCool))) !important;}
+.ui-slider-range{
+  background-image: linear-gradient(to left, hsl(var(--isChill_I)), hsl(var(--notCool_I))) !important;}
+
+.display-browser SPAN:first-child{
+  color: hsl(var(--chillN)) !important;}
+A:focus,
+.icon-history,
+.display-browser:hover SPAN:first-child,
+.header-left-navigation A:hover,
+.player_sharing .player-controller-container SPAN:not(.icon-mute),
+.play-song-link-browser .icon-play,
+.chat-main A:hover,
+.chat-text-box-icons{
+  color: hsl(var(--chillA)) !important;}
+
+.player_sharing .icon-facebook{
+  color: var(--f_I) !important;}
+.player_sharing .icon-twitter{
+  color: var(--t_I) !important;}
+
+.nc-container,
+.snooze_btn:hover,
+.player_sharing .videoquality-el.active-hd{
+  opacity: 1 !important;}
+.snooze_btn,
+.player_sharing .hideVideo-el.active,
+.player_sharing .videoquality-el{
+  opacity: .5 !important;}
+
+.chat_tools,
+.pusher-chat-widget-input{
+  border-color: hsl(var(--chillBase_I)) !important;}
+
+#player-controller,
+#player-controller .left{
+  background-color: transparent !Important;}
+
+.ui-slider{
+  width: 96px !Important;}
+
+
+
 /* @null's ideas */
 /**/ /* === CODE BEGIN === */
 /**/ .icon-eye-blocked:before{
 /**/   content: "\e90b";
 /**/ }
 /**/ /* === CODE END === */
-  
+
 /* Side menus */
-  #main-menu-left NAV{
-    background-color: hsla(var(--chillBase), var(--A_1)) !important;
-  }
-  
-  #main-menu-left NAV:nth-child(2) > A:nth-child(-n+6):not(:nth-child(2)),
-  .logout-link{
-    color: #fff !important;
-  }
-  #main-menu-left :nth-child(2) > A:nth-child(2){
-    color: hsl(var(--chillA)) !Important;
-  }
-  NAV A.facebook SPAN{
-    color: var(--f_I) !important;
-  }
-  NAV A.twitter SPAN{
-    color: var(--t_I) !important;
-  }
-  NAV A.discord SPAN{
-    color: var(--d_I) !important;
-  }
-  NAV A.youtube SPAN{
-    color: var(--y_I) !important;
-  }
-  NAV A.reddit SPAN{
-    color: var(--r_I) !important;
-  }
-  NAV A.github SPAN{
-    color: var(--g_I) !important;
-  }
-  .icon-logout{
-    color: hsl(var(--notCool_I)) !important;
-  }
-  
-  #main-message-list .message-header,
-  #main-message-list.main-message-list{
-    background: transparent !Important;
-  }
-  #main-message-list .message-header{
-    overflow: hidden !Important;
-  }
-  
-  #new-message-input{
-    background-color: hsla(var(--chillSide), var(--A_3)) !important;
-    box-shadow: 0px 0px 0px 160px hsla(var(--chillBase), var(--A_3)) !Important;
-  }
-  
-  #main-menu-right .close-menu{
-    background-color: hsla(var(--chillBase), var(--A_3)) !important;
-  }
-  #main-message-list .message-item{
-    background-color: hsla(var(--chillSide), var(--A_3)) !important;
-    opacity: 1 !Important;
-  }
-  
-  #main-menu-right .close-menu SPAN{
-    color: hsl(var(--notCool_I)) !important;
-  }
-  
+#main-menu-left NAV{
+  background-color: hsla(var(--chillBase), var(--A_1)) !important;}
+
+#main-menu-left NAV:nth-child(2) > A:nth-child(-n+6):not(:nth-child(2)),
+.logout-link{
+  color: #fff !important;}
+#main-menu-left :nth-child(2) > A:nth-child(2){
+  color: hsl(var(--chillA)) !Important;}
+NAV A.facebook SPAN{
+  color: var(--f_I) !important;}
+NAV A.twitter SPAN{
+  color: var(--t_I) !important;}
+NAV A.discord SPAN{
+  color: var(--d_I) !important;}
+NAV A.youtube SPAN{
+  color: var(--y_I) !important;}
+NAV A.reddit SPAN{
+  color: var(--r_I) !important;}
+NAV A.github SPAN{
+  color: var(--g_I) !important;}
+.icon-logout{
+  color: hsl(var(--notCool_I)) !important;}
+
+#main-message-list .message-header{
+  overflow: hidden !Important;}
+
+#new-message-input{
+  box-shadow: 0px 0px 0px 160px hsla(var(--chillBase), var(--A_3)) !Important;}
+#main-menu-right .message-details INPUT{
+  box-shadow: 0px 0px 0px 16px hsla(var(--chillBase), var(--A_3)) !Important;
+  margin: 0px 0px -1px -1px !important;
+  width: calc(100% + 2px) !Important;}
+
+#main-menu-right .close-menu,
+#main-menu-right .view-message-details HEADER{
+  background-color: hsla(var(--chillBase), var(--A_3)) !important;}
+#new-message-input,
+#main-message-list .message-item,
+#main-menu-right .view-message-details .message-item,
+#main-menu-right .message-details INPUT{
+  background-color: hsla(var(--chillSide), var(--A_3)) !important;
+  opacity: 1 !Important;}
+
+#main-menu-right .close-menu SPAN{
+  color: hsl(var(--notCool_I)) !important;}
+
+#main-menu-right .message-list LI:before{
+  background-color: HSL(var(--chillA)) !Important;}
+
+#main-message-list .message-header,
+#main-message-list.main-message-list,
+#main-menu-right .view-message-details .message-details{
+  background-color: transparent !Important;}
+#main-menu-right .message-details .message-header{
+  padding: 11px 16px 12px 16px !important;}
+
 /* Library browser */
-  #browser A.text-button{
-    border-radius: .3rem !important;
-    border-color: transparent !Important;}
-  
-  #browser A.queue-playlist{
-    background-color: hsla(var(--isChill), var(--A_3)) !important;}
-  #browser A.queue-playlist:hover,
-  #browser .sidebar .selected,
-  #import-playlist-container .import-playlist,
-  #browser .icon-createplaylist{
-    background-color: hsl(var(--isChill)) !important;
-    color: #fff !Important;}
+#browser A.text-button{
+  border-radius: .3rem !important;
+  border-color: transparent !Important;}
 
-  #browser .browser-content-header,
-  #browser .sidebar{
-    background-color: hsl(var(--chillSide)) !important;}
+#browser A.queue-playlist{
+  background-color: hsla(var(--isChill), var(--A_3)) !important;}
+#browser A.queue-playlist:hover,
+#browser .sidebar .selected,
+#import-playlist-container .import-playlist,
+#browser .icon-createplaylist{
+  background-color: hsl(var(--isChill)) !important;
+  color: #fff !Important;}
 
-  #browser A.pause-queue{
-    background-color: hsla(var(--chillBase), var(--A_3)) !Important;
-  }
-  #browser .form INPUT,
-  #browser .form .music-type-select,
-  #browser .form .music-type-dropdown,
-  #browser A.pause-queue:hover{
-    background-color: hsl(var(--chillBase)) !important;
-    color: #fff !important;}
-  
-  #browser A.edit-playlist-name,
-  #browser A.shuffle-playlist{
-    background-color: hsla(var(--chillSide), var(--A_3)) !Important;
-  }
-  #browser A.edit-playlist-name:hover,
-  #browser A.shuffle-playlist:hover{
-    background-color: hsl(var(--chillSide)) !important;
-    color: #fff !important;
-  }
-  
-  #browser A.clear-queue,
-  #browser A.delete-playlist{
-    background-color: hsla(var(--notCool), var(--A_3)) !important;
-  }
-  #browser A.clear-queue:hover,
-  #browser A.delete-playlist:hover{
-    background-color: hsl(var(--notCool)) !important;
-    color: #fff !Important;
-  }
-  
-  #browser .sidebar .create-playlist,
-  #browser .sidebar .import-playlist,
-  #browser .close-browser.icon-downvote{
-    background-color: hsl(var(--isChill)) !Important;
-  }
-  #browser .sidebar .create-playlist SPAN,
-  #browser .sidebar .import-playlist SPAN,
-  #browser .close-browser.icon-downvote{
-    color: hsl(var(--chillA)) !Important;
-  }
-  
-  .queue-info-contains-notice DIV[class*="queue"]{
-    color: #fff !Important;
-  }
-  
-  #browser .sidebar SPAN:before{
-    color: hsl(var(--chillA)) !important;
-  }
-  
-  #browser .actions A{
-    background-color: transparent !important;
-    border: none !Important;
-  }
-  #browser .actions A SPAN:before,
-  #browser .actions A SPAN{
-    color: #fff !important;
-  }
-  #browser .actions .add_to_playlist:hover SPAN:before{
-    color: hsl(var(--isChill_I)) !important;
-  }
-  #browser LI .preview,
-  #browser .actions .add_to_queue:hover SPAN:before,
-  #browser .actions .set_song_to_top_queue:hover SPAN:before,
-  #import-playlist-container .import-playlist:before{
-    color: hsl(var(--chillA)) !important;
-  }
-  #browser .actions .remove_icon:hover SPAN:before{
-    color: hsl(var(--notCool)) !important;
-  }
-  #browser LI .preview .icon-youtube{
-    color: var(--y_I) !important;
-  }
-  #browser LI .preview .icon-soundcloud{
-    color: var(--s_I) !important;
-  }
-  
-  #import-playlist-container{
-    background-color: hsla(var(--chillBase), var(--A_3)) !important;
-  }
-  #import-playlist-container .icon-close{
-    background-color: transparent !important;
-    color: hsl(var(--notCool_I)) !important;
-  }  
-  #import-playlist-container SELECT{
-    background-color: hsl(var(--chillSide)) !Important;
-    color: #fff !important;
-  }  
-  #import-playlist-container .import-playlist{
-    font-family: Open Sans,sans-serif !important;
-  }
-  #import-playlist-container .import-playlist:before{
-    font-family: icomoon !important;
-  }
-  
-  #browser [class*="_info"]{
-    background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse25.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat hsl(var(--chillN)) !important;
-  }
-  #browser .content-videos{
-    background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse25.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat hsl(var(--chillSide)) !important;
-  }
-  #browser .content-videos LI{
-    background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse25.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat hsl(var(--chillBase)) !important;
-  }
-  .queue-join-info,
-  #browser .content-videos LI:hover,
-  #browser .content-videos LI.selected{
-    background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse25.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat hsl(var(--isChill)) !important;
-  }
-  .queue-locked-info{
-    background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse25.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat hsl(var(--notCool)) !important;
-  }
-  #browser .place{
-    color: #fff !important;
-    text-align: center !Important;
-    font-weight: bold !Important;
-    font-size: 12pt !Important;
-    width: 32px !Important;
-    top: -8px !important;
-    left: 36px !Important;
-    padding-bottom: 2px !important;
-    border-radius: 2px !important;
-    z-index: 1 !Important;
-  }
-  #browser .content-videos LI .place{
-    background-color: hsla(var(--chillBase), var(--A_3)) !important;
-  }
-  #browser .content-videos LI:hover .place{
-    background-color: hsl(var(--chillBase)) !important;
-  }
-  #browser .content-videos FIGURE IMG{
-    top: -3px !Important;
-  }
-  
-  #addToPlaylistFloatContainer .create-playlist-header,
-  #addToPlaylistFloatContainer UL LI:hover{
-    background-color: hsl(var(--isChill)) !important;
-  }
-  #addToPlaylistFloatContainer .create-playlist-input{
-    background-color: hsl(var(--chillN)) !Important;
-    border-color: transparent !Important;
-  }
-  #addToPlaylistFloatContainer UL{
-    background-color: hsl(var(--chillBase)) !Important;
-  }
-  #addToPlaylistFloatContainer .create-playlist-header SPAN{
-    color: hsl(var(--notCool)) !Important;
-  }
-  #addToPlaylistFloatContainer .create-playlist-input SPAN{
-    color: hsl(var(--chillA)) !important;
-  }
-  #addToPlaylistFloatContainer UL LI{
-    color: #fff !Important;
-  }
-  
-  #browser .actions,
-  #browser .icon-createplaylist,
-  #addToPlaylistFloatContainer .create-playlist-input SPAN{
-    background-color: transparent !important;
-  }
-  #browser .content-videos LI.selected{
-    border-color: transparent !Important;
-  }
+#browser .browserPlaylistItems{
+  padding-bottom: 0px !Important;}
+
+#browser .result-videos LI{
+  border: none !important;
+  border-top: solid 1px hsl(var(--chillBase_I)) !Important;
+  z-index: 0;
+  padding-bottom: 7px !Important;}
+#browser .result-videos LI:hover{
+  overflow: visible !important;
+  border-top: solid 1px hsl(var(--isChill_I)) !Important;
+  box-shadow: 0px 1px 0px 0px hsl(var(--isChill_I)) !important;
+  z-index: 1;}
+
+#browser .browser-content-header,
+#browser .sidebar{
+  background-color: hsl(var(--chillSide)) !important;}
+
+#browser #youtube-search{
+  box-shadow: 1px 0px 0px 0px hsl(var(--chillBase_I)) !Important;}
+#browser .music-type-select{
+  box-shadow: -1px 0px 0px 0px hsl(var(--chillBase_I)) !important;}
+
+#browser .sidebar .create-playlist{
+  border-color: hsl(var(--isChill_I)) !important;}
+
+#browser A.pause-queue{
+  background-color: hsla(var(--chillBase), var(--A_3)) !Important;}
+#browser .form INPUT,
+#browser .form .music-type-select,
+#browser .form .music-type-dropdown,
+#browser A.pause-queue:hover{
+  background-color: hsl(var(--chillBase)) !important;
+  color: #fff !important;}
+
+#browser .music-type-dropdown SPAN{
+  border-top-color: hsl(var(--chillBase_I)) !important;}
+
+#browser A.edit-playlist-name,
+#browser A.shuffle-playlist{
+  background-color: hsla(var(--chillSide), var(--A_3)) !Important;}
+#browser A.edit-playlist-name:hover,
+#browser A.shuffle-playlist:hover{
+  background-color: hsl(var(--chillSide)) !important;
+  color: #fff !important;}
+
+#browser A.clear-queue,
+#browser A.delete-playlist{
+  background-color: hsla(var(--notCool), var(--A_3)) !important;}
+#browser A.clear-queue:hover,
+#browser A.delete-playlist:hover{
+  background-color: hsl(var(--notCool)) !important;
+  color: #fff !Important;}
+
+#browser .sidebar .create-playlist,
+#browser .sidebar .import-playlist,
+#browser .close-browser.icon-downvote,
+#browser .display-sidebar{
+  background-color: hsl(var(--isChill)) !Important;}
+#browser .sidebar .create-playlist:hover,
+#browser .sidebar .import-playlist:hover,
+#browser .close-browser.icon-downvote:hover,
+#browser .display-sidebar:hover{
+  background-color: hsl(var(--isChill_I)) !important;}
+
+#browser .sidebar .create-playlist SPAN,
+#browser .sidebar .import-playlist SPAN,
+#browser .close-browser.icon-downvote{
+  color: hsl(var(--chillA)) !Important;}
+
+.queue-info-contains-notice DIV[class*="queue"]{
+  color: #fff !Important;}
+
+#browser .sidebar SPAN:before{
+  color: hsl(var(--chillA)) !important;}
+
+#browser .actions A SPAN:before,
+#browser .actions A SPAN{
+  color: #fff !important;}
+#browser .actions .add_to_playlist:hover SPAN:before{
+  color: hsl(var(--isChill_I)) !important;}
+#browser LI .preview,
+#browser .actions .add_to_queue:hover SPAN:before,
+#browser .actions .set_song_to_top_queue:hover SPAN:before,
+#browser .display-song-settings:hover:before,
+#import-playlist-container .import-playlist:before{
+  color: hsl(var(--chillA)) !important;}
+#browser .actions .remove_icon:hover SPAN:before{
+  color: hsl(var(--notCool)) !important;}
+#browser LI .preview .icon-youtube{
+  color: var(--y_I) !important;}
+#browser LI .preview .icon-soundcloud{
+  color: var(--s_I) !important;}
+
+#import-playlist-container{
+  background-color: hsla(var(--chillBase), var(--A_3)) !important;}
+#import-playlist-container .icon-close{
+  background-color: transparent !important;
+  color: hsl(var(--notCool_I)) !important;}  
+#import-playlist-container SELECT{
+  background-color: hsl(var(--chillSide)) !Important;
+  color: #fff !important;}  
+#import-playlist-container .import-playlist{
+  font-family: Open Sans,sans-serif !important;}
+#import-playlist-container .import-playlist:before{
+  font-family: icomoon !important;}
+
+#browser [class*="_info"]{
+  background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse10.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat hsl(var(--chillN)) !important;}
+#browser .content-videos{
+  background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse10.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat hsl(var(--chillSide)) !important;}
+#browser .content-videos LI{
+  background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse10.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat hsl(var(--chillBase)) !important;}
+.queue-join-info,
+#browser .content-videos LI:hover,
+#browser .content-videos LI.selected{
+  background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse10.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat hsl(var(--isChill)) !important;}
+.queue-locked-info{
+  background: url(https://rawgit.com/Hebgbs/plugthemes/master/images/mixer/browse10.png) fixed center center/var(--MixB_X) var(--MixB_Y) no-repeat hsl(var(--notCool)) !important;}
+#browser .place{
+  color: #fff !important;
+  text-align: center !Important;
+  font-weight: bold !Important;
+  font-size: 12pt !Important;
+  width: 32px !Important;
+  top: -5px !important;
+  left: 36px !Important;
+  padding-bottom: 2px !important;
+  border-radius: 2px !important;
+  z-index: 1 !Important;}
+
+
+#browser .result-videos LI .description{
+  padding-top: 8px !Important;
+  padding-bottom: 8px !important;}
+#browser .content-videos LI .place{
+  background-color: hsla(var(--chillBase), var(--A_3)) !important;}
+#browser .content-videos LI:hover .place{
+  background-color: hsl(var(--chillBase)) !important;}
+#browser .result-videos .timeDisplay{
+  top: 25px !important;}
+#browser .result-videos .actions{
+  top: 10px !important;}
+#browser .result-videos .display-song-settings{
+  top: 15px !important;}
+#browser .result-videos LI FIGURE{
+  top: 11px !Important;}
+#browser .result-videos FIGURE IMG{
+  top: -3px !Important;}
+
+#addToPlaylistFloatContainer .create-playlist-header,
+#addToPlaylistFloatContainer UL LI:hover{
+  background-color: hsl(var(--isChill)) !important;}
+#addToPlaylistFloatContainer .create-playlist-input{
+  background-color: hsl(var(--chillN)) !Important;
+  border-color: transparent !Important;}
+#addToPlaylistFloatContainer UL{
+  background-color: hsl(var(--chillBase)) !Important;}
+#addToPlaylistFloatContainer .create-playlist-header SPAN{
+  color: hsl(var(--notCool)) !Important;}
+#addToPlaylistFloatContainer .create-playlist-input SPAN{
+  color: hsl(var(--chillA)) !important;}
+#addToPlaylistFloatContainer UL LI{
+  color: #fff !Important;}
+
+.playerPreview{
+  background-color: hsla(var(--chillBase), var(--A_3)) !important;}
+.playerPreview .close{
+  background-color: transparent !Important;
+  color: hsl(var(--notCool_I)) !important;}
+
+#browser .actions,
+#browser .icon-createplaylist,
+#addToPlaylistFloatContainer .create-playlist-input SPAN{
+  background-color: transparent !important;}
+#browser .actions A,
+#browser .display-song-settings{
+  background-color: transparent !important;
+  border-color: transparent !Important;}
+#browser .content-videos LI.selected
+.playerPreview .controlContainer DIV{
+  border-color: transparent !Important;}
 /* Third-party enhancements */
-  /* Dub+ */
-    /* > Old method; Make menu use colour with opaque headers */
+/* Dub+ */
+  /* > Old method; Make menu use colour with opaque headers */
 /*.dubplus-menu{
-    background-color: hsla(var(--chillBase), var(--A_3)) !important;
-  }
-  
-  .dubplus-menu-section-header{
-    background-color: hsl(var(--chillSide)) !important;
-  }*/
-  
-    /* > Current method; Make menu transparent with less opaque colours */
-  .dubplus-menu-header,
-  .dubplus-menu-section{
-    background-color: hsla(var(--chillBase), var(--A_1)) !important;
-    border-color: transparent !Important;
-  }
-  
-  .dubplus-menu-section-header{
-    background-color: hsla(var(--chillSide), var(--A_1)) !important;
-    border-color: transparent !Important;
-  }
-  
-  .dubplus-switch-bg{
-    border-color: transparent !important;
-    box-shadow: 0px 0px 0px 2px hsl(var(--chillSide)) !Important;
-  }
-  .dubplus-switch .dubplus-switcher{
-    background-color: hsl(var(--notCool)) !Important;
-    border: 2px solid hsl(var(--notCool_I)) !important;
-  }
-  .dubplus-switch-on .dubplus-switcher{
-    background-color: hsl(var(--isChill)) !Important;
-    border: 2px solid hsl(var(--isChill_I)) !important;
-  }
-    /* Other menu stuff */
-  .fa-arrows-alt{
-    color: hsl(var(--isChill_I)) !Important;
-  }
-  .fa-bug{
-    color: hsl(var(--notCool_I)) !important;
-  }
-  .fa-reddit-alien{
-    color: var(--r_I) !important;
-  }
-  .fa-facebook{
-    color: var(--f_I) !important;
-  }
-  .fa-twitter{
-    color: var(--t_I) !important;
-  }
-  
-  .dubplus-menu,
-  .dubplus-switch-bg{
-    background: transparent !Important;
-  }
-  
-  .dubplus-menu .dubplus-switch.dubplus-switch .dubplus-switcher{
-    right: 13px !Important;
-  }
-  .dubplus-menu .dubplus-switch.dubplus-switch-on .dubplus-switcher{
-    right: 10px !Important;
-  }
-  
-    /* Voting */
-  .dubinfo-show.dubplus-grabs-hover{
-    background-color: hsla(var(--isChill), var(--A_3)) !Important;
-    border-color: hsl(var(--isChill_I)) !important;
-  }
-  .dubinfo-show.dubplus-grabs-hover LI:hover{
-    background-color: hsl(var(--isChill_I)) !important;
-  }
-  .dubinfo-show.dubplus-updubs-hover{
-    background-color: hsl(var(--chillBase)) !Important;
-    border-color: hsl(var(--chillBase_I)) !important;
-  }
-  .dubinfo-show.dubplus-updubs-hover LI:hover{
-    background-color: hsl(var(--chillBase_I)) !important;
-  }
-  .dubinfo-show.dubplus-downdubs-hover{
-    background-color: hsla(var(--notCool), var(--A_3)) !Important;
-    border-color: hsl(var(--notCool_I)) !important;
-  }
-  .dubinfo-show.dubplus-downdubs-hover LI:hover{
-    background-color: hsl(var(--notCool_I)) !important;
-  }
-    /* Dialogs */
-  .dp-modal .title{
-    background-color: hsl(var(--chillBase)) !important;
-  }
-  .dp-modal TEXTAREA{
-    background-color: hsl(var(--chillN)) !important;
-  }
-  #dp-modal-cancel{
-    background-color: hsl(var(--notCool)) !important;
-  }
-  #dp-modal-cancel:hover{
-    background-color: hsl(var(--notCool_I)) !important;
-  }
-  #dp-modal-confirm{
-    background-color: hsl(var(--isChill)) !important;
-    color: #fff !Important;
-  }
-  #dp-modal-confirm:hover{
-    background-color: hsl(var(--isChill_I)) !important;
-  }
-  .dp-modal .content{
-    background-color: hsla(var(--chillBase), var(--A_3)) !important;
-  }
-  .dp-modal .container{
-    background-color: transparent !important;
-  }
+  background-color: hsla(var(--chillBase), var(--A_3)) !important;}
+
+.dubplus-menu-section-header{
+  background-color: hsl(var(--chillSide)) !important;}*/
+
+  /* > Current method; Make menu transparent with less opaque colours */
+.dubplus-menu-header,
+.dubplus-menu-section{
+  background-color: hsla(var(--chillBase), var(--A_1)) !important;
+  border-color: transparent !Important;}
+
+.dubplus-menu-section-header{
+  background-color: hsla(var(--chillSide), var(--A_1)) !important;
+  border-color: transparent !Important;}
+
+.dubplus-switch-bg{
+  border-color: transparent !important;
+  box-shadow: 0px 0px 0px 2px hsl(var(--chillSide)) !Important;}
+.dubplus-switch .dubplus-switcher{
+  background-color: hsl(var(--notCool)) !Important;
+  border: 2px solid hsl(var(--notCool_I)) !important;}
+.dubplus-switch-on .dubplus-switcher{
+  background-color: hsl(var(--isChill)) !Important;
+  border: 2px solid hsl(var(--isChill_I)) !important;}
+  /* Other menu stuff */
+.fa-arrows-alt{
+  color: hsl(var(--isChill_I)) !Important;}
+.fa-bug{
+  color: hsl(var(--notCool_I)) !important;}
+.fa-reddit-alien{
+  color: var(--r_I) !important;}
+.fa-facebook{
+  color: var(--f_I) !important;}
+.fa-twitter{
+  color: var(--t_I) !important;}
+
+.dubplus-menu,
+.dubplus-switch-bg{
+  background: transparent !Important;}
+
+.dubplus-menu .dubplus-switch.dubplus-switch .dubplus-switcher{
+  right: 13px !Important;}
+.dubplus-menu .dubplus-switch.dubplus-switch-on .dubplus-switcher{
+  right: 10px !Important;}
+
+  /* Voting */
+.dubinfo-show.dubplus-grabs-hover{
+  background-color: hsla(var(--isChill), var(--A_3)) !Important;
+  border-color: hsl(var(--isChill_I)) !important;}
+.dubinfo-show.dubplus-grabs-hover LI:hover{
+  background-color: hsl(var(--isChill_I)) !important;}
+.dubinfo-show.dubplus-updubs-hover{
+  background-color: hsl(var(--chillBase)) !Important;
+  border-color: hsl(var(--chillBase_I)) !important;}
+.dubinfo-show.dubplus-updubs-hover LI:hover{
+  background-color: hsl(var(--chillBase_I)) !important;}
+.dubinfo-show.dubplus-downdubs-hover{
+  background-color: hsla(var(--notCool), var(--A_3)) !Important;
+  border-color: hsl(var(--notCool_I)) !important;}
+.dubinfo-show.dubplus-downdubs-hover LI:hover{
+  background-color: hsl(var(--notCool_I)) !important;}
+  /* Dialogs */
+.dp-modal .title{
+  background-color: hsl(var(--chillBase)) !important;}
+.dp-modal TEXTAREA{
+  background-color: hsl(var(--chillN)) !important;}
+#dp-modal-cancel{
+  background-color: hsl(var(--notCool)) !important;}
+#dp-modal-cancel:hover{
+  background-color: hsl(var(--notCool_I)) !important;}
+#dp-modal-confirm{
+  background-color: hsl(var(--isChill)) !important;
+  color: #fff !Important;}
+#dp-modal-confirm:hover{
+  background-color: hsl(var(--isChill_I)) !important;}
+.dp-modal .content{
+  background-color: hsla(var(--chillBase), var(--A_3)) !important;}
+.dp-modal .container{
+  background-color: transparent !important;}
 
 
 /* Rainbow progress bars and sliders
-   Modified to be not rainbow and animated, using vars from v2 theme */
+ Only used for fake seekbar in progress. */
 /**/ /* === CODE BEGIN === */
 /**/ /* Thanks to Netox005 for finding a better way to do this! */
 /**/
 /**/ /* Constants */
 /**/ #player-controller .left,
 /**/ #player-controller .infoContainerInner:after,
-/**/ #player-controller .progressBg,
-/**/ .ui-slider-range-min,
-/**/ .ui-slider,
-/**/ .playerPreview .loaded,
-/**/ .playerPreview .progress{
-/**/   background-repeat: repeat-x !Important;   /* <--+++++++++++++++++++++++++++ */
-/**/   background-attachment: fixed !Important;  /* <--+ Don't touch any of this + */
-/**/   background-color: transparent !Important; /* <--+++++++++++++++++++++++++++ */}
+/**/ #player-controller .progressBg{
+/**/   background-repeat: repeat-x !Important;    /* <--+++++++++++++++++++++++++++ */
+/**/   background-attachment: fixed !Important;   /* <--+ Don't touch any of this + */
+/**/   background-color: transparent !Important;} /* <--+++++++++++++++++++++++++++ */
 /**/
 /**/ /* Colours */
 /**/   /* Footer overlay */
 /**/ #player-controller .infoContainerInner:after {
 /**/   z-index: 0; /* ! Don't touch this, explained at bottom */
-/**/   width: 100%;        /* <--+++++++++++++++++++++++++++++++++++++++++++++ */
-/**/   height: 5px;        /* <--+                                           + */
-/**/   content: '';        /* <--+   Don't touch any of this; These define   + */
-/**/   position: absolute; /* <--+ pseudochild size, position and visibility + */
-/**/   bottom: 0;          /* <--+                                           + */
-/**/   left: 0px;          /* <--+++++++++++++++++++++++++++++++++++++++++++++ */}
-/**/   /* Volume slider */
-/**/ .ui-slider-handle{
-/**/   background-color: #fff !Important;}
+/**/   width: 100%;         /* <--+++++++++++++++++++++++++++++++++++++++++++++ */
+/**/   height: 5px;         /* <--+                                           + */
+/**/   content: '';         /* <--+   Don't touch any of this; These define   + */
+/**/   position: absolute;  /* <--+ pseudochild size, position and visibility + */
+/**/   bottom: 0;           /* <--+                                           + */
+/**/   left: 0px;}          /* <--+++++++++++++++++++++++++++++++++++++++++++++ */
+/**/
 /**/   /* Rainbow gradients */
 /**/     /* Bright */
 /**/ #player-controller .progressBg{
 /**/   background-image: linear-gradient(to left,
 /**/                                     hsl(var(--notCool_I)) 0%,
 /**/                                     hsl(var(--isChill_I)) 100%) !Important;}
-/**/ .ui-slider-range-min{
-/**/   background-image: linear-gradient(to left,
-/**/                                     hsl(var(--isChill_I)) 0%,
-/**/                                     hsl(var(--notCool_I)) 100%) !Important;}
 /**/     /* Dark */
 /**/ #player-controller .infoContainerInner:after{
 /**/   background-image: linear-gradient(to left,
 /**/                                     hsl(var(--notCool)) 0%,
 /**/                                     hsl(var(--isChill)) 100%) !Important;}
-/**/ .ui-slider{
-/**/   background-image: linear-gradient(to left,
-/**/                                     hsl(var(--isChill)) 0%,
-/**/                                     hsl(var(--notCool)) 100%) !Important;}
 /**/
 /**/ .playerPreview .progress{
 /**/   background-color: hsl(var(--isChill)) !Important;}
@@ -595,10 +577,6 @@
 /**/ .playerPreview .loaded,
 /**/ .playerPreview .progress{
 /**/   background-size: 100% 100% !Important;}
-/**/ /* Volume */
-/**/ .ui-slider-range-min,
-/**/ .ui-slider{
-/**/   background-size: 96.1px 100% !Important;}
 /**/
 /**/ /* Opacity for player preview */
 /**/ .playerPreview .loaded{
@@ -608,4 +586,4 @@
 /**/ /*   above the "Footer overlay" pseudochild     */
 /**/ #player-controller *{
 /**/   z-index: 1 !Important;}
-/**/ /* === CODE END === */
+/**/ /* === CODE END === */}
