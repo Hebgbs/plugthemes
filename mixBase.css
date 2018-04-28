@@ -180,7 +180,23 @@ A:focus,
 .ui-slider{
   width: 96px !Important;}
 
-
+#header-global SPAN:not([class*=icon-]),
+#header-global A,
+#mobile-room-menu,
+.message-counter,
+.player_header,
+.room-info-display-wrapper *,
+#player-controller .left,
+#player-controller .right SPAN:not([class*="icon"]),
+.play-song-link-container,
+.display-room-users I,
+.messages-display,
+.chat-main,
+.avatar_tools *,
+.chat-options,
+#avatar-list,
+#chat-txt-message{
+  font-family: var(--F_Body) !important;}
 
 /* @null's ideas */
 /**/ /* === CODE BEGIN === */
@@ -245,6 +261,14 @@ NAV A.github SPAN{
   background-color: transparent !Important;}
 #main-menu-right .message-details .message-header{
   padding: 11px 16px 12px 16px !important;}
+  
+#main-menu-left A,
+#private-messages #main-message-list *,
+#private-messages .message-header,
+#private-messages .message-list,
+#private-messages INPUT,
+.dubinfo-show{
+  font-family: var(--F_Body) !important;}
 
 /* Library browser */
 #browser A.text-button{
@@ -470,6 +494,7 @@ NAV A.github SPAN{
 .dubplus-switch-on .dubplus-switcher{
   background-color: hsl(var(--isChill)) !Important;
   border: 2px solid hsl(var(--isChill_I)) !important;}
+  
   /* Other menu stuff */
 .fa-arrows-alt{
   color: hsl(var(--isChill_I)) !Important;}
@@ -525,7 +550,9 @@ NAV A.github SPAN{
   background-color: hsla(var(--chillBase), var(--A_3)) !important;}
 .dp-modal .container{
   background-color: transparent !important;}
-
+  
+    .dubplus-menu *:not([class*="fa-"]){
+  font-family: var(--F_Body) !important;}
 
 /* Rainbow progress bars and sliders
  Only used for fake seekbar in progress. */
