@@ -466,15 +466,7 @@ NAV A.github SPAN{
 .playerPreview .controlContainer DIV{
   border-color: transparent !Important;}
 
-#browser INPUT,
-#browser .queue_info,
-#browser .sidebar,
-#browser .browserPlaylistItems,
-#browser H3,
-#browser .playlist-select,
-#browser .import-playlist,
-.playerPreview .song-info,
-.playerPreview .timer{
+#browser *:not([class*="icon"]){
   font-family: var(--F_Body) !important;}
 
 /* Third-party enhancements */
