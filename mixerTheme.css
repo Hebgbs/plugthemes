@@ -23,7 +23,7 @@
 :root{
 /* Fonts, as defined by above imports
    Potential for expansion upon request */
-  --F_Body: Myraid Pro; /* FOR TESTING ONLY: REPLACE WITH MYRAID PRO */
+  --F_Body: "Myraid Pro","Open Sans",sans-serif; /* FOR TESTING ONLY: REPLACE WITH MYRAID PRO */
 /* Colours for the theme: HSL */
   /* Hues: 0-360 */
     --H_1: 243;
