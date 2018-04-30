@@ -261,7 +261,7 @@ NAV A.github SPAN{
   background-color: transparent !Important;}
 #main-menu-right .message-details .message-header{
   padding: 11px 16px 12px 16px !important;}
-  
+
 #main-menu-left A,
 #private-messages #main-message-list *,
 #private-messages .message-header,
@@ -382,10 +382,10 @@ NAV A.github SPAN{
   background-color: hsla(var(--chillBase), var(--A_3)) !important;}
 #import-playlist-container .icon-close{
   background-color: transparent !important;
-  color: hsl(var(--notCool_I)) !important;}  
+  color: hsl(var(--notCool_I)) !important;}
 #import-playlist-container SELECT{
   background-color: hsl(var(--chillSide)) !Important;
-  color: #fff !important;}  
+  color: #fff !important;}
 #import-playlist-container .import-playlist{
   font-family: Open Sans,sans-serif !important;}
 #import-playlist-container .import-playlist:before{
@@ -414,7 +414,6 @@ NAV A.github SPAN{
   padding-bottom: 2px !important;
   border-radius: 2px !important;
   z-index: 1 !Important;}
-
 
 #browser .result-videos LI .description{
   padding-top: 8px !Important;
@@ -466,6 +465,18 @@ NAV A.github SPAN{
 #browser .content-videos LI.selected
 .playerPreview .controlContainer DIV{
   border-color: transparent !Important;}
+
+#browser INPUT,
+#browser .queue_info,
+#browser .sidebar,
+#browser .browserPlaylistItems,
+#browser H3,
+#browser .playlist-select,
+#browser .import-playlist,
+.playerPreview .song-info,
+.playerPreview .timer{
+  font-family: var(--F_Body) !important;}
+
 /* Third-party enhancements */
 /* Dub+ */
   /* > Old method; Make menu use colour with opaque headers */
@@ -494,7 +505,7 @@ NAV A.github SPAN{
 .dubplus-switch-on .dubplus-switcher{
   background-color: hsl(var(--isChill)) !Important;
   border: 2px solid hsl(var(--isChill_I)) !important;}
-  
+
   /* Other menu stuff */
 .fa-arrows-alt{
   color: hsl(var(--isChill_I)) !Important;}
@@ -550,7 +561,7 @@ NAV A.github SPAN{
   background-color: hsla(var(--chillBase), var(--A_3)) !important;}
 .dp-modal .container{
   background-color: transparent !important;}
-  
+
     .dubplus-menu *:not([class*="fa-"]){
   font-family: var(--F_Body) !important;}
 
